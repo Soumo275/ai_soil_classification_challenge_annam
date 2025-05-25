@@ -1,10 +1,14 @@
 # annam_ai_soil-classification-challenge
 
-## Challange 1 Video link
+## Challenge 1 Video link
 
-## Challange 2 video link
+https://drive.google.com/file/d/1GddHjq60PdUdSB0Z3jBdcLkSYZEzFQxA/view?usp=drive_link
 
-### Challange 1 (soil type classification)
+## Challenge 2 video link
+
+https://drive.google.com/file/d/1QP8PLlmO2UqDxrwkE1qnCGJ30Ji8hCJc/view?usp=sharing
+
+# Challenge 1 (soil type classification)
 
 ## Project Steps
 
@@ -44,7 +48,7 @@ Soumo275
 
 47
 
-### Challenge 2 ( soil detection)
+# Challenge 2 ( soil detection)
 
 ## Project Steps
 
