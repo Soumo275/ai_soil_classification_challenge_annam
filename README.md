@@ -1,5 +1,11 @@
 # annam_ai_soil-classification-challenge
 
+## Challange 1 Video link
+
+## Challange 2 video link
+
+### Challange 1 (soil type classification)
+
 ## Project Steps
 
 Here is a step-by-step description of the process implemented in the notebook:
@@ -37,3 +43,39 @@ Soumo275
 ## Leaderboard Rank
 
 47
+
+### Challenge 2 ( soil detection)
+
+## Project Steps
+
+Here is a step-by-step description of the process implemented in the second notebook/script:
+
+1. **Extract Dataset:** The dataset folder containing training images is placed at `/content/soil-classification/soil_competition-2025/train`.
+
+2. **Feature Extraction:** Each image is resized to 224x224 pixels and passed through a pre-trained ResNet50 model (with `include_top=False` and `pooling='avg'`) to extract 2048-dimensional deep feature vectors.
+
+3. **Scale Features:** All extracted features are standardized using `StandardScaler` to ensure consistent input scaling for the model.
+
+4. **Train One-Class SVM:** A One-Class SVM model with RBF kernel is trained on the standardized features. The model assumes the training data consists only of “normal” instances.
+
+5. **Save the Model:** The trained One-Class SVM and the `StandardScaler` object are serialized and saved using `joblib` as `soil_model.pkl`.
+
+6. **Evaluate (Optional):** If ground truth labels are available, the model can be evaluated using precision, recall, F1-score, and confusion matrix to measure its ability to detect outliers.
+
+### How to Run
+
+1. Ensure the following libraries are installed: `tensorflow`, `numpy`, `scikit-learn`, `joblib`
+2. Place your dataset in the correct folder structure as described in the script.
+3. Run the training script to generate and save the anomaly detection model (`soil_model.pkl`).
+
+## Results
+
+The model was successfully trained on deep features extracted using ResNet50. It is capable of detecting anomalies in soil images with a f1 score of 0.915
+
+## Team Name
+
+Soumo275
+
+### Leaderboard Rank
+
+**38**

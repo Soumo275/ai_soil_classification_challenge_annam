@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# === Example: Download a dataset ===
-KAGGLE_DATASET="https://www.kaggle.com/competitions/soil-classification/data"
+# === Example: Download dataset from a Kaggle competition ===
+COMPETITION_NAME="soil-classification-part-2"
 TARGET_DIR="./data"
 
-echo "Downloading dataset: $KAGGLE_DATASET"
+echo "Downloading dataset for competition: $COMPETITION_NAME"
 mkdir -p "$TARGET_DIR"
-kaggle datasets download -d "$KAGGLE_DATASET" -p "$TARGET_DIR" --unzip
+kaggle competitions download -c "$COMPETITION_NAME" -p "$TARGET_DIR"
 
 echo "Download complete. Files saved to $TARGET_DIR"

@@ -6,6 +6,6 @@ scikit-learn
 pandas
 numpy
 matplotlib
-cv2
 seaborn
 joblib
+opencv-python
