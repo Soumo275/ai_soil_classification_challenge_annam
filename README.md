@@ -12,11 +12,9 @@ Here is a step-by-step description of the process implemented in the notebook:
 
 4.  **Evaluate Model:** The trained model's performance is evaluated on the test set. Accuracy, a classification report (precision, recall, F1-score), and a confusion matrix are generated.
 
-5.  **Load Test Data:** The `test_ids.csv` file is loaded into a pandas DataFrame.
+5.  **Predict on Test Data:** For each image listed in `test_ids.csv`, the image is loaded, features are extracted using the same color histogram method as in training, and the saved model is used to predict the soil type.
 
-6.  **Predict on Test Data:** For each image listed in `test_ids.csv`, the image is loaded, features are extracted using the same color histogram method as in training, and the saved model is used to predict the soil type.
-
-7.  **Save Test Predictions:** The predicted soil types for the test images are added as a new column (`soil_type`) to the DataFrame loaded from `test_ids.csv`, and the result is saved to `test_input_with_predictions.csv`.
+6.  **Save Test Predictions:** The predicted soil types for the test images are added as a new column (`soil_type`) to the DataFrame loaded from `test_ids.csv`, and the result is saved to `test_input_with_predictions.csv`.
 
 ## How to Run
 
