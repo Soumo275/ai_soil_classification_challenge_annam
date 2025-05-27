@@ -38,7 +38,7 @@ The accuracy of the Extra Trees Classifier on the validation set (split from the
 
 ## Author
 
-Soumyadip Mukherjee, Aaryaa Sastry
+Soumyadip Mukherjee
 
 ## Team Name
 
